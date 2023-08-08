@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  CHALLENGE №1 Demo
+//  CHALLENGE №1 
 //
 //  Created by Vanopr on 07.08.2023.
 //
