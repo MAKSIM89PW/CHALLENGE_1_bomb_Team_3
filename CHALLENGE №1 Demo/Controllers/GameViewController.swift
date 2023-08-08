@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  CHALLENGE №1 Demo
+//  CHALLENGE №1
 //
 //  Created by Vanopr on 07.08.2023.
 //
@@ -38,16 +38,15 @@ class GameViewController: UIViewController {
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func goBackFromStartScreenButton(_ sender: UIButton) {
+        func performSegue(withIdentifier identifier: String, sender: Any?) {
+            if identifier == "GoBackFromStartScreen" {
+              // Do something before the segue is performed
+              super.performSegue(withIdentifier: "GoBackFromStartScreen", sender: nil)
+            }
+          }
     }
-    */
+    
 
 }
 
