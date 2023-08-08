@@ -1,4 +1,4 @@
-//
+//  Team №3
 //  EndGameViewController.swift
 //  CHALLENGE №1 
 //
