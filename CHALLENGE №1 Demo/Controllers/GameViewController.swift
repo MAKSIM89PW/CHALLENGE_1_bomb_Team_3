@@ -1,4 +1,4 @@
-//
+//  Team №3
 //  GameViewController.swift
 //  CHALLENGE №1
 //

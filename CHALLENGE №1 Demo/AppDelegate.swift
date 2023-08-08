@@ -1,8 +1,8 @@
-//
+//  Team №3
 //  AppDelegate.swift
 //  CHALLENGE №1 
 //
-//  Created by Vanopr on 07.08.2023.
+//  Created by Vanopr on 07.08.2023
 //
 
 import UIKit
