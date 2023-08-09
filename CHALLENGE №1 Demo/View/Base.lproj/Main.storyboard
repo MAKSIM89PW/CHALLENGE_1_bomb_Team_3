@@ -136,8 +136,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-fW-Fj5" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="220" width="414" height="513"/>
+                                <rect key="frame" x="0.0" y="284" width="414" height="449"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bomb" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-D0-rzK">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="409"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dfc-D0-rzK" secondAttribute="trailing" id="WJc-fv-9cC"/>
+                                    <constraint firstItem="dfc-D0-rzK" firstAttribute="leading" secondItem="i5i-fW-Fj5" secondAttribute="leading" id="ZzC-nJ-f22"/>
+                                    <constraint firstItem="dfc-D0-rzK" firstAttribute="top" secondItem="i5i-fW-Fj5" secondAttribute="top" constant="20" id="mRD-6d-XfO"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfc-D0-rzK" secondAttribute="bottom" constant="20" id="rWD-X9-RKG"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="animation_ll0q8l7d"/>
                                 </userDefinedRuntimeAttributes>
@@ -146,6 +157,7 @@
                                 <rect key="frame" x="70" y="743" width="274" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="ebS-OY-MJe"/>
+                                    <constraint firstAttribute="width" constant="274" id="uTQ-3i-2ka"/>
                                     <constraint firstAttribute="height" constant="79" id="w2Y-kd-rL8"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -156,9 +168,12 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseForegroundColor" red="0.98039215690000003" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="initiateButtonPressed:" destination="o9A-Wn-2sN" eventType="touchUpInside" id="DSB-8g-wCd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD6-s4-UQA">
-                                <rect key="frame" x="352" y="25" width="37" height="38"/>
+                                <rect key="frame" x="352" y="25" width="37" height="102"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="image 8"/>
                             </button>
@@ -170,7 +185,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите “Запустить” чтобы начать игру" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68T-pF-UfF">
-                                <rect key="frame" x="0.0" y="100" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="164" width="414" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="1IP-uN-fOI"/>
                                     <constraint firstAttribute="height" constant="100" id="zZ5-S0-PqJ"/>
@@ -222,6 +237,7 @@
                     <navigationItem key="navigationItem" id="jFj-p1-66e"/>
                     <connections>
                         <outlet property="animationView" destination="i5i-fW-Fj5" id="yaG-wY-xos"/>
+                        <outlet property="initiateButton" destination="9Rt-yP-16c" id="R9e-go-DG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XWY-ny-Llx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -593,7 +609,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SlM-8i-wbJ"/>
+        <segue reference="Bcm-r0-6ap"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Arrow" width="11" height="19"/>
