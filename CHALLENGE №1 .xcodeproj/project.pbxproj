@@ -20,6 +20,9 @@
 		0BAA16212A80FE8C00B9FDFD /* animation_ll0q8l7d.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA16202A80FE8C00B9FDFD /* animation_ll0q8l7d.json */; };
 		0BAA16232A80FF5200B9FDFD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA16222A80FF5200B9FDFD /* GameViewController.swift */; };
 		E7047E842A8383BB006D4FC6 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7047E832A8383BB006D4FC6 /* QuestionsModel.swift */; };
+		216C73582A83A5E4009FDA82 /* timerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 216C73572A83A5E4009FDA82 /* timerSound.mp3 */; };
+		216C735A2A83B23D009FDA82 /* timerOverSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 216C73592A83B23D009FDA82 /* timerOverSound.mp3 */; };
+		216C735C2A83B8CD009FDA82 /* fitilSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 216C735B2A83B8CD009FDA82 /* fitilSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		0BAA16202A80FE8C00B9FDFD /* animation_ll0q8l7d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_ll0q8l7d.json; sourceTree = "<group>"; };
 		0BAA16222A80FF5200B9FDFD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E7047E832A8383BB006D4FC6 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionsModel.swift; path = "CHALLENGE №1 Demo/QuestionsModel.swift"; sourceTree = SOURCE_ROOT; };
+		216C73572A83A5E4009FDA82 /* timerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timerSound.mp3; sourceTree = "<group>"; };
+		216C73592A83B23D009FDA82 /* timerOverSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timerOverSound.mp3; sourceTree = "<group>"; };
+		216C735B2A83B8CD009FDA82 /* fitilSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fitilSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 		0BAA161C2A80FC5000B9FDFD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				216C735B2A83B8CD009FDA82 /* fitilSound.mp3 */,
+				216C73572A83A5E4009FDA82 /* timerSound.mp3 */,
+				216C73592A83B23D009FDA82 /* timerOverSound.mp3 */,
 				0BAA16112A80E72800B9FDFD /* Assets.xcassets */,
 				0BAA16202A80FE8C00B9FDFD /* animation_ll0q8l7d.json */,
 			);
@@ -185,7 +194,10 @@
 			files = (
 				0BAA16152A80E72800B9FDFD /* LaunchScreen.storyboard in Resources */,
 				0BAA16122A80E72800B9FDFD /* Assets.xcassets in Resources */,
+				216C73582A83A5E4009FDA82 /* timerSound.mp3 in Resources */,
 				0BAA16212A80FE8C00B9FDFD /* animation_ll0q8l7d.json in Resources */,
+				216C735C2A83B8CD009FDA82 /* fitilSound.mp3 in Resources */,
+				216C735A2A83B23D009FDA82 /* timerOverSound.mp3 in Resources */,
 				0BAA16102A80E72600B9FDFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
