@@ -19,6 +19,7 @@
 		0BAA161F2A80FDB800B9FDFD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0BAA161E2A80FDB800B9FDFD /* Lottie */; };
 		0BAA16212A80FE8C00B9FDFD /* animation_ll0q8l7d.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BAA16202A80FE8C00B9FDFD /* animation_ll0q8l7d.json */; };
 		0BAA16232A80FF5200B9FDFD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA16222A80FF5200B9FDFD /* GameViewController.swift */; };
+		E7047E842A8383BB006D4FC6 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7047E832A8383BB006D4FC6 /* QuestionsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0BAA16162A80E72800B9FDFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BAA16202A80FE8C00B9FDFD /* animation_ll0q8l7d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_ll0q8l7d.json; sourceTree = "<group>"; };
 		0BAA16222A80FF5200B9FDFD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E7047E832A8383BB006D4FC6 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionsModel.swift; path = "CHALLENGE №1 Demo/QuestionsModel.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		0BAA16262A8100E000B9FDFD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7047E832A8383BB006D4FC6 /* QuestionsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				0B0908FA2A82A06D006A5BC6 /* HelpViewController.swift in Sources */,
 				0BAA16232A80FF5200B9FDFD /* GameViewController.swift in Sources */,
 				0BAA160D2A80E72600B9FDFD /* ViewController.swift in Sources */,
+				E7047E842A8383BB006D4FC6 /* QuestionsModel.swift in Sources */,
 				0B0908F62A82A01C006A5BC6 /* EndGameViewController.swift in Sources */,
 				0BAA16092A80E72600B9FDFD /* AppDelegate.swift in Sources */,
 				0B0908F82A82A052006A5BC6 /* CategoryViewController.swift in Sources */,
