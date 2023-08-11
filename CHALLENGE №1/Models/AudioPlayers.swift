@@ -8,7 +8,6 @@
 import Foundation
 import AVFAudio
 
-
 struct Audio {
     
     var backgroundMusic: AVAudioPlayer?
@@ -17,7 +16,6 @@ struct Audio {
     var burnMusic: AVAudioPlayer?
     
     var musicOnOff = UserDefaults.standard.bool( forKey: "musicOnOff")
-    
     var musicNumber  = UserDefaults.standard.integer(forKey: "musicNumber")
     var clockSoundNumber = UserDefaults.standard.integer(forKey: "clockSoundNumber")
     var bombSoundNumber = UserDefaults.standard.integer(forKey: "bombSoundNumber")

@@ -64,7 +64,6 @@ class ViewController: UIViewController {
     @IBAction func CategoryButton(_ sender: Any) {
         func performSegue(withIdentifier identifier: String, sender: Any?) {
             if identifier == "CategoryViewAction" {
-              // Do something before the segue is performed
               super.performSegue(withIdentifier: "CategoryViewAction", sender: nil)
             }
           }

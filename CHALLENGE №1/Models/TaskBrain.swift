@@ -40,7 +40,6 @@ struct Tasks {
     
     mutating func getRandomNonRepeatingTask() -> String {
         
-        
         if newArrayOfTasks.isEmpty {
             newArrayOfTasks = taskArray
         }

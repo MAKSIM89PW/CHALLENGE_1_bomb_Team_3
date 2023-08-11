@@ -12,9 +12,7 @@ class EndGameViewController: UIViewController {
     var tasks      = Tasks()
     var memory = MemorySettings()
     
-//    var tasksOnOff = UserDefaults.standard.bool( forKey: "tasksOnOff")
 
-    
     @IBOutlet weak var labelPrompt: UILabel!
     
     @IBOutlet weak var taskLabel: UILabel!

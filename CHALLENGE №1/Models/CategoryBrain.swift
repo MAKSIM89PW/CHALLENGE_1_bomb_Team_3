@@ -9,12 +9,6 @@ import Foundation
 
 struct Category {
     
-    
-    
-    //    var ifAboutDifferentOn = UserDefaults.standard.bool(forKey: "ifAboutDifferentOn")
-    //
-    //    var ifHobbiesAndSportsOn = UserDefaults.standard.bool(forKey: "ifHobbiesAndSportsOn")
-    
     var allQuestiuns : [String] = []
     
     let questionsAboutDifferent: [String] = [
@@ -109,31 +103,23 @@ struct Category {
     ]
     let natureQuestionsArray = [
         "Назовите ваше любимое место в природе.",
-//        "Назовите вид животных, который вас удивляет.",
-//        "Назовите ваше любимое время года.",
-//        "Назовите пейзаж, который вызывает у вас восхищение.",
-//        "Назовите растение, которое символизирует для вас красоту природы.",
-//        "Назовите природное явление, которое вас впечатляет.",
-//        "Назовите национальный парк, который вы мечтаете посетить.",
-//        "Назовите морское создание, которое вызывает в вас интерес.",
-//        "Назовите вид спорта, связанный с природой.",
-//        "Назовите экологический вопрос, о котором вы беспокоитесь.",
-//        "Назовите место, где вы чувствуете близость к природе.",
-//        "Назовите вид птиц, который вас впечатляет своим полетом.",
-//        "Назовите природную красоту, которая вызывает у вас благоговение.",
-//        "Назовите животное, символизирующее силу природы.",
-//        "Назовите природное зрелище, которое вы мечтаете увидеть."
+        //        "Назовите вид животных, который вас удивляет.",
+        //        "Назовите ваше любимое время года.",
+        //        "Назовите пейзаж, который вызывает у вас восхищение.",
+        //        "Назовите растение, которое символизирует для вас красоту природы.",
+        //        "Назовите природное явление, которое вас впечатляет.",
+        //        "Назовите национальный парк, который вы мечтаете посетить.",
+        //        "Назовите морское создание, которое вызывает в вас интерес.",
+        //        "Назовите вид спорта, связанный с природой.",
+        //        "Назовите экологический вопрос, о котором вы беспокоитесь.",
+        //        "Назовите место, где вы чувствуете близость к природе.",
+        //        "Назовите вид птиц, который вас впечатляет своим полетом.",
+        //        "Назовите природную красоту, которая вызывает у вас благоговение.",
+        //        "Назовите животное, символизирующее силу природы.",
+        //        "Назовите природное зрелище, которое вы мечтаете увидеть."
     ]
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     mutating func addAllCategories(ifAboutDifferentOn: Bool,
                                    ifHobbiesAndSportsOn: Bool,
                                    ifLifeQuestionsOn: Bool,
@@ -146,46 +132,46 @@ struct Category {
         if ifHobbiesAndSportsOn {
             allQuestiuns += sportsAndHobbiesQuestions
         }
-            if ifLifeQuestionsOn {
-                allQuestiuns += lifeQuestionsArray
-            }
-            if ifCelebrityQuestionsOn {
-                allQuestiuns += celebrityQuestionsArray
-            }
-            if ifFilmArtQuestionsOn {
-                allQuestiuns += filmArtQuestionsArray
-            }
-            if ifNatureQuestionsOn {
+        if ifLifeQuestionsOn {
+            allQuestiuns += lifeQuestionsArray
+        }
+        if ifCelebrityQuestionsOn {
+            allQuestiuns += celebrityQuestionsArray
+        }
+        if ifFilmArtQuestionsOn {
+            allQuestiuns += filmArtQuestionsArray
+        }
+        if ifNatureQuestionsOn {
             allQuestiuns += natureQuestionsArray
-            }
-        
-        
-            if !ifAboutDifferentOn  && !ifHobbiesAndSportsOn && !ifLifeQuestionsOn && !ifCelebrityQuestionsOn && !ifFilmArtQuestionsOn && !ifNatureQuestionsOn  {
-                allQuestiuns = ["Выберите хотя бы одну категорию"]
-                
-                
-            }
-            return allQuestiuns
-        }
-  
-        
-        
-        var currentQuestion: String = ""
-        
-    var newArrayOfQuestion: [String] = []
-        
-        mutating func getRandomNonRepeatingQuestion(questionsModify: [String]) -> String {
-            
-            
-            var newArray = questionsModify
-            let randomIndex = Int.random(in: 0..<newArray.count)
-            currentQuestion = newArray[randomIndex]
-            newArray.remove(at: randomIndex)
-            newArrayOfQuestion = newArray
-            
-            return currentQuestion
         }
         
         
-        
+        if !ifAboutDifferentOn  && !ifHobbiesAndSportsOn && !ifLifeQuestionsOn && !ifCelebrityQuestionsOn && !ifFilmArtQuestionsOn && !ifNatureQuestionsOn  {
+            allQuestiuns = ["Выберите хотя бы одну категорию"]
+            
+            
+        }
+        return allQuestiuns
     }
+    
+    
+    
+    var currentQuestion: String = ""
+    
+    var newArrayOfQuestion: [String] = []
+    
+    mutating func getRandomNonRepeatingQuestion(questionsModify: [String]) -> String {
+        
+        
+        var newArray = questionsModify
+        let randomIndex = Int.random(in: 0..<newArray.count)
+        currentQuestion = newArray[randomIndex]
+        newArray.remove(at: randomIndex)
+        newArrayOfQuestion = newArray
+        
+        return currentQuestion
+    }
+    
+    
+    
+}

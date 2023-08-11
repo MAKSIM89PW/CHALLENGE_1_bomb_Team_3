@@ -30,7 +30,7 @@ struct MemoryCategory {
     
     
     
-//    var questionsActual = UserDefaults.standard.array(forKey: "questions") as! [String]
+
     
     var ifContinue = UserDefaults.standard.bool(forKey: "continue")
 
