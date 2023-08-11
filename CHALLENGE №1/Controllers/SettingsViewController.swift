@@ -10,19 +10,7 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     var memory = MemorySettings()
-    
-//    var shortGameOn  = UserDefaults.standard.bool( forKey: "shortGameOn")
-//    var middleGameOn = UserDefaults.standard.bool(forKey: "middleGameOn")
-//    var longGameOn   = UserDefaults.standard.bool(forKey: "longGameOn")
-//    var randomGameOn = UserDefaults.standard.bool( forKey: "randomGameOn")
-//    var gameTime     = UserDefaults.standard.integer(forKey: "gameTime")
-//    var tasksOnOff   = UserDefaults.standard.bool( forKey: "tasksOnOff")
-//    var musicOnOff   = UserDefaults.standard.bool( forKey: "musicOnOff")
-//
-//    var musicNumber  = UserDefaults.standard.integer(forKey: "musicNumber")
-//    var clockSoundNumber = UserDefaults.standard.integer(forKey: "clockSoundNumber")
-//    var bombSoundNumber = UserDefaults.standard.integer(forKey: "bombSoundNumber")
-    
+
     let purpleColor  = UIColor(red: 129/255, green: 48/255, blue: 167/255, alpha: 1)
     let yellowColor  = UIColor(red: 247/255, green: 248/255, blue: 11/255, alpha: 1)
     
@@ -46,11 +34,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
-        
-       
-        
-        
+
         shortG.layer.cornerRadius = 12
         shortG.layer.borderColor = UIColor.black.cgColor
         shortG.layer.borderWidth = 1
@@ -84,14 +68,11 @@ class SettingsViewController: UIViewController {
         } else {
             gameWithMusic.isOn  = false
         }
-        
-        
-        
+
         setBackgroundMusic()
         setClockMusic()
         setBombMusic()
-        
-        
+  
     }
     
     @IBAction func shortGame(_ sender: UIButton) {
@@ -108,10 +89,7 @@ class SettingsViewController: UIViewController {
         middleGameOnOff()
         memory.gameTime = 20
         UserDefaults.standard.set(false, forKey: "continue")
-
-        
-        
-        
+ 
     }
     
     @IBAction func longGame(_ sender: UIButton) {

@@ -17,7 +17,7 @@ class GameViewController: UIViewController {
     var timer: Timer?
     
     
-
+    
     
     var category = Category()
     var audio = Audio()
@@ -28,13 +28,6 @@ class GameViewController: UIViewController {
     
     var questionSaved = UserDefaults.standard.string( forKey: "questionSaved")
     
-//    let ifAboutDifferentOn     = UserDefaults.standard.bool(forKey: "ifAboutDifferentOn")
-//    let ifHobbiesAndSportsOn   = UserDefaults.standard.bool(forKey: "ifHobbiesAndSportsOn")
-//    let ifLifeQuestionsOn      = UserDefaults.standard.bool(forKey: "ifLifeQuestionsOn")
-//    let ifCelebrityQuestionsOn = UserDefaults.standard.bool(forKey: "ifCelebrityQuestionsOn")
-//    let ifFilmArtQuestionsOn   = UserDefaults.standard.bool(forKey: "ifFilmArtQuestionsOn")
-//    let ifNatureQuestionsOn    = UserDefaults.standard.bool(forKey: "ifNatureQuestionsOn")
-//    var musicOnOff             = UserDefaults.standard.bool( forKey: "musicOnOff")
     
     let gameTimeActual =  UserDefaults.standard.integer(forKey: "gameTime")
     
@@ -50,24 +43,6 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         UserDefaults.standard.set(true, forKey: "continue")
-
-  
-        
-        
-        
-        
-        
-//        if questionsActual.isEmpty {
-//           questionsActual = category.addAllCategories(
-//                ifAboutDifferentOn     : memory.ifAboutDifferent,
-//                ifHobbiesAndSportsOn   : memory.ifHobbiesAndSports,
-//                ifLifeQuestionsOn      : memory.ifLifeQuestions,
-//                ifCelebrityQuestionsOn : memory.ifCelebrityQuestions,
-//                ifFilmArtQuestionsOn   : memory.ifFilmArtQuestions,
-//                ifNatureQuestionsOn    : memory.ifNatureQuestions)
-//
-//
-//        }
         
         
         // MARK: Проверка:
@@ -75,35 +50,28 @@ class GameViewController: UIViewController {
         print(questionsActual)
         print(gameTimeActual)
         print(animationCurrentTime)
-
         
-          animationView!.frame = view.bounds
-          
-          
+        
+        animationView!.frame = view.bounds
+        
+        
         animationView!.contentMode = .scaleAspectFit
-     
-   
-          
-          
-          //  Play animation
-          
-          animationView!.stop()
+        
+        
+        animationView!.stop()
         // изменить на .play чтобы запустить анимацию
         stopButton.isHidden = true
         
-       
-
+        
+        
         audio.setupAudioPlayers()
     }
     
-
+    
     
     @IBAction func goBackFromStartScreenButtonAction(_ sender: UIButton) {
         animationView.stop()
         
-//        audio.backgroundMusic?.stop()
-//        audio.tickingMusic?.stop()
-//        audio.burnMusic?.stop()
         
         audio.stopMusic()
         timer?.invalidate()
@@ -129,67 +97,45 @@ class GameViewController: UIViewController {
         } else {
             questionLabel.text = questionSaved
         }
-            
-          
         
-       
+        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateAnimationCurrentTime), userInfo: nil, repeats: true)
-
-      
-            
-            animationView!.loopMode = .loop
-            animationView.play()
         
-//        audio.backgroundMusic?.play()
-//        audio.tickingMusic?.play()
-//        audio.burnMusic?.play()
         
-            audio.playMusic()
-            goButton.isHidden = true
-            stopButton.isHidden = false
+        
+        animationView!.loopMode = .loop
+        animationView.play()
+        
+        
+        audio.playMusic()
+        goButton.isHidden = true
+        stopButton.isHidden = false
     }
     
     @IBAction func stopButtonAction(_ sender: UIButton) {
         animationView.pause()
-        
-//        audio.backgroundMusic?.pause()
-//        audio.tickingMusic?.pause()
-//        audio.burnMusic?.pause()
-        
         audio.pauseMusic()
         goButton.isHidden = false
         stopButton.isHidden = true
         timer?.invalidate()
         timer = nil
-      
-       
+        
+        
     }
-
+    
     func gameOver() {
         
-                let endGameViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EndGameViewController") as! EndGameViewController
+        let endGameViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EndGameViewController") as! EndGameViewController
         endGameViewController.modalPresentationStyle = .fullScreen
-                self.present(endGameViewController, animated: true)
+        self.present(endGameViewController, animated: true)
         
         
         animationView.isHidden = true
-        
-//        audio.backgroundMusic?.stop()
-//        audio.tickingMusic?.stop()
-//        audio.burnMusic?.stop()
-        
         audio.stopMusic()
         audio.explosionMusic?.play()
         timer?.invalidate()
         timer = nil
         
-        
-//        animationCurrentTime = 0
-
-       
-       
-        
-
     }
     
     @objc func updateAnimationCurrentTime() {
@@ -200,12 +146,12 @@ class GameViewController: UIViewController {
             gameOver()
         }
         
-     
+        
         
     }
     
     
- 
+    
     
 }
 

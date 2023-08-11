@@ -34,10 +34,6 @@ class CategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-        
-        
         сhoiceAboutDifferent()
         choiceHobbiesAndSportsAction()
         сhoiceLifeQuestions()
@@ -86,13 +82,7 @@ class CategoryViewController: UIViewController {
         startOver.modalPresentationStyle = .fullScreen
         self.present(startOver, animated: true)
     }
-    
-    
-    
-    
-    
-    
-    
+
     func сhoiceAboutDifferent() {
         
         if ifAboutDifferent {
