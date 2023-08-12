@@ -9,14 +9,11 @@ import UIKit
 
 class EndGameViewController: UIViewController {
     
-    var tasks      = Tasks()
+    var tasks = Tasks()
     var memory = MemorySettings()
     
-
     @IBOutlet weak var labelPrompt: UILabel!
-    
     @IBOutlet weak var taskLabel: UILabel!
-    
     @IBOutlet weak var otherTask: UIButton!
     
     override func viewDidLoad() {
@@ -29,8 +26,6 @@ class EndGameViewController: UIViewController {
             otherTask.isHidden   = true
             labelPrompt.isHidden = true
         }
-
-       
     }
     
     @IBAction func changeTaskAction(_ sender: UIButton) {
@@ -39,7 +34,7 @@ class EndGameViewController: UIViewController {
     
     @IBAction func startOverAction(_ sender: UIButton) {
         
-        let startOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let startOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! MainViewController
         startOver.modalPresentationStyle = .overFullScreen
         self.present(startOver, animated: true)
     }
@@ -49,14 +44,5 @@ class EndGameViewController: UIViewController {
         let gameViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         gameViewController.modalPresentationStyle = .fullScreen
         self.present(gameViewController, animated: true)
-        
     }
-    
-
-        
-        
-    }
-    
-    
-    
-
+}

@@ -83,6 +83,7 @@ struct Category {
         //        "Назовите знаменитость, которая активно влияет на мнение поколений.",
         //        "Назовите актера/актрису, кто искусством своей игры захватывает вас."
     ]
+    
     let filmArtQuestionsArray = [
         "Назовите ваш любимый фильм.",
         //        "Назовите актера, чья игра всегда впечатляет.",
@@ -101,6 +102,7 @@ struct Category {
         //        "Назовите музыкальный жанр, который наполняет вас энергией.",
         //        "Назовите актера, чья карьера впечатляет вас."
     ]
+    
     let natureQuestionsArray = [
         "Назовите ваше любимое место в природе.",
         //        "Назовите вид животных, который вас удивляет.",
@@ -119,13 +121,13 @@ struct Category {
         //        "Назовите природное зрелище, которое вы мечтаете увидеть."
     ]
     
-
     mutating func addAllCategories(ifAboutDifferentOn: Bool,
                                    ifHobbiesAndSportsOn: Bool,
                                    ifLifeQuestionsOn: Bool,
                                    ifCelebrityQuestionsOn: Bool,
                                    ifFilmArtQuestionsOn: Bool,
                                    ifNatureQuestionsOn: Bool) -> [String] {
+        
         if ifAboutDifferentOn {
             allQuestiuns += questionsAboutDifferent
         }
@@ -144,7 +146,6 @@ struct Category {
         if ifNatureQuestionsOn {
             allQuestiuns += natureQuestionsArray
         }
-        
         
         if !ifAboutDifferentOn  && !ifHobbiesAndSportsOn && !ifLifeQuestionsOn && !ifCelebrityQuestionsOn && !ifFilmArtQuestionsOn && !ifNatureQuestionsOn  {
             allQuestiuns = ["Выберите хотя бы одну категорию"]
@@ -172,15 +173,10 @@ struct Category {
         return allQuestiuns
     }
     
-    
-    
     var currentQuestion: String = ""
-    
     var newArrayOfQuestion: [String] = []
     
     mutating func getRandomNonRepeatingQuestion(questionsModify: [String]) -> String {
-        
-        
         var newArray = questionsModify
         let randomIndex = Int.random(in: 0..<newArray.count)
         currentQuestion = newArray[randomIndex]
@@ -189,7 +185,4 @@ struct Category {
         
         return currentQuestion
     }
-    
-    
-    
 }

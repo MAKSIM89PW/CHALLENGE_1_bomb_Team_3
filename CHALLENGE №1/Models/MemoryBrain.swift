@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct MemorySettings {
     
     var shortGameOn  = UserDefaults.standard.bool( forKey: "shortGameOn")
@@ -17,17 +16,11 @@ struct MemorySettings {
     var gameTime     = UserDefaults.standard.integer(forKey: "gameTime")
     var tasksOnOff   = UserDefaults.standard.bool( forKey: "tasksOnOff")
     var musicOnOff   = UserDefaults.standard.bool( forKey: "musicOnOff")
-    
     var musicNumber  = UserDefaults.standard.integer(forKey: "musicNumber")
     var clockSoundNumber = UserDefaults.standard.integer(forKey: "clockSoundNumber")
     var bombSoundNumber = UserDefaults.standard.integer(forKey: "bombSoundNumber")
-    
     var animation =  UserDefaults.standard.bool(forKey: "animation")
-
     var randomCategory = UserDefaults.standard.bool(forKey: "randomCategoryOnOff")
-    
     var ifContinue = UserDefaults.standard.bool(forKey: "continue")
 
 }
-
-

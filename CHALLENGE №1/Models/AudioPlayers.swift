@@ -24,8 +24,6 @@ struct Audio {
     var clockTitle = ""
     var bombTitle  = ""
     
-    
-    
     mutating func setupAudioPlayers() {
         
         if musicNumber == 1 {
@@ -57,7 +55,6 @@ struct Audio {
             let soundFileURL2 = URL(fileURLWithPath: soundFilePath2)
             let soundFileURL3 = URL(fileURLWithPath: soundFilePath3)
             let soundFileURL4 = URL(fileURLWithPath: soundFilePath4)
-
             
             do {
                 backgroundMusic = try AVAudioPlayer(contentsOf: soundFileURL1)
@@ -77,21 +74,23 @@ struct Audio {
                     explosionMusic?.volume = 0.0
                     burnMusic?.volume = 0.0
                 }
-
+                
             } catch {
                 print("Ошибка при загрузке аудио: \(error.localizedDescription)")
             }
         }
     }
+    
     func playMusic() {
         backgroundMusic?.play()
         tickingMusic?.play()
         burnMusic?.play()
     }
+    
     func stopMusic() {
-       backgroundMusic?.stop()
-       tickingMusic?.stop()
-       burnMusic?.stop()
+        backgroundMusic?.stop()
+        tickingMusic?.stop()
+        burnMusic?.stop()
     }
     
     func pauseMusic() {

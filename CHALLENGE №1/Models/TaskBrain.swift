@@ -33,9 +33,7 @@ struct Tasks {
         "Изобразите, как вы берете 'селфи' с вымышленной знаменитостью."
     ]
     
-    
     var currentTask: String = ""
-    
     var newArrayOfTasks: [String] = []
     
     mutating func getRandomNonRepeatingTask() -> String {
@@ -50,8 +48,4 @@ struct Tasks {
         
         return currentTask
     }
-    
-    
-    
-    
 }

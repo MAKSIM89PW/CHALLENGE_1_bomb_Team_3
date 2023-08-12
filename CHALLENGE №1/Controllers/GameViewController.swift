@@ -12,12 +12,8 @@ import Foundation
 
 class GameViewController: UIViewController {
     
-    
     var animationCurrentTime = UserDefaults.standard.double(forKey: "animationCurrentTime")
     var timer: Timer?
-    
-    
-    
     
     var category = Category()
     var audio = Audio()
@@ -33,9 +29,7 @@ class GameViewController: UIViewController {
     
     
     @IBOutlet weak var questionLabel: UILabel!
-    
     @IBOutlet weak var stopButton: UIButton!
-    
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet private var animationView: LottieAnimationView!
     
@@ -44,32 +38,18 @@ class GameViewController: UIViewController {
         
         UserDefaults.standard.set(true, forKey: "continue")
         
-        
-      
-
-        // MARK: Проверка:
+        // MARK: Проверка
         
         print(questionsActual)
         print(gameTimeActual)
         print(animationCurrentTime)
-
-
         animationView!.frame = view.bounds
-        
-        
         animationView!.contentMode = .scaleAspectFit
-        
-        
         animationView!.stop()
         // изменить на .play чтобы запустить анимацию
         stopButton.isHidden = true
-        
-        
-        
         audio.setupAudioPlayers()
     }
-    
-    
     
     @IBAction func goBackFromStartScreenButtonAction(_ sender: UIButton) {
         
@@ -80,8 +60,7 @@ class GameViewController: UIViewController {
         
         UserDefaults.standard.set(animationCurrentTime, forKey: "animationCurrentTime")
         
-        
-        let startOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let startOver = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! MainViewController
         startOver.modalPresentationStyle = .fullScreen
         self.present(startOver, animated: true)
     }
@@ -98,9 +77,7 @@ class GameViewController: UIViewController {
             questionLabel.text = questionSaved
         }
         
-    
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAnimationCurrentTime), userInfo: nil, repeats: true)
-        
         
         if memorySettings.animation {
             animationView!.loopMode = .loop
@@ -119,8 +96,6 @@ class GameViewController: UIViewController {
         stopButton.isHidden = true
         timer?.invalidate()
         timer = nil
-        
-        
     }
     
     func gameOver() {
@@ -129,13 +104,11 @@ class GameViewController: UIViewController {
         endGameViewController.modalPresentationStyle = .fullScreen
         self.present(endGameViewController, animated: true)
         
-        
         animationView.isHidden = true
         audio.stopMusic()
         audio.explosionMusic?.play()
         timer?.invalidate()
         timer = nil
-        
     }
     
     @objc func updateAnimationCurrentTime() {
@@ -145,13 +118,5 @@ class GameViewController: UIViewController {
         } else {
             gameOver()
         }
-        
-        
-        
     }
-    
-    
-    
-    
 }
-
