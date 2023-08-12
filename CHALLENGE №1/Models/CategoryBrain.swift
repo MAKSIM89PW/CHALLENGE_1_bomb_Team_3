@@ -148,8 +148,26 @@ struct Category {
         
         if !ifAboutDifferentOn  && !ifHobbiesAndSportsOn && !ifLifeQuestionsOn && !ifCelebrityQuestionsOn && !ifFilmArtQuestionsOn && !ifNatureQuestionsOn  {
             allQuestiuns = ["Выберите хотя бы одну категорию"]
-            
-            
+        }
+        return allQuestiuns
+    }
+    
+    mutating func addRandomCategories() -> [String] {
+        
+        let randomIndex = Int.random(in: 0...5)
+        
+        if randomIndex == 0 {
+            allQuestiuns += questionsAboutDifferent
+        } else if randomIndex == 1 {
+            allQuestiuns += sportsAndHobbiesQuestions
+        } else if randomIndex == 2 {
+            allQuestiuns += lifeQuestionsArray
+        } else if randomIndex == 3 {
+            allQuestiuns += celebrityQuestionsArray
+        } else if randomIndex == 4 {
+            allQuestiuns += filmArtQuestionsArray
+        } else if randomIndex == 5 {
+            allQuestiuns += natureQuestionsArray
         }
         return allQuestiuns
     }

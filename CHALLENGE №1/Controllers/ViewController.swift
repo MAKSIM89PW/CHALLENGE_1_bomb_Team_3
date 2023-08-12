@@ -11,7 +11,7 @@ import Lottie
 class ViewController: UIViewController {
     let gradientLayer = CAGradientLayer()
     var category      = Category()
-    var memory = MemoryCategory()
+    var memory = MemorySettings()
     
     var questionsActual = UserDefaults.standard.array(forKey: "questions") as! [String]
     
@@ -76,15 +76,19 @@ class ViewController: UIViewController {
     
     
     @IBAction func startGameButton(_ sender: UIButton) {
+        if !memory.randomCategory {
+            questionsActual = category.addAllCategories(
+                ifAboutDifferentOn     : ifAboutDifferent,
+                ifHobbiesAndSportsOn   : ifHobbiesAndSports,
+                ifLifeQuestionsOn      : ifLifeQuestions,
+                ifCelebrityQuestionsOn : ifCelebrityQuestions,
+                ifFilmArtQuestionsOn   : ifFilmArtQuestions,
+                ifNatureQuestionsOn    : ifNatureQuestions)
+        } else {
+            questionsActual = category.addRandomCategories()
+        }
         
-         questionsActual = category.addAllCategories(
-                     ifAboutDifferentOn     : ifAboutDifferent,
-                     ifHobbiesAndSportsOn   : ifHobbiesAndSports,
-                     ifLifeQuestionsOn      : ifLifeQuestions,
-                     ifCelebrityQuestionsOn : ifCelebrityQuestions,
-                     ifFilmArtQuestionsOn   : ifFilmArtQuestions,
-                     ifNatureQuestionsOn    : ifNatureQuestions)
-
+        
         UserDefaults.standard.set(0, forKey: "animationCurrentTime")
         UserDefaults.standard.set(questionsActual, forKey: "questions")
         UserDefaults.standard.synchronize() // Синхронизация

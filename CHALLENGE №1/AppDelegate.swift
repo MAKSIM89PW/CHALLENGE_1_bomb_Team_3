@@ -10,10 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-   
 var questionStart = Category()
-
-
 
     // MARK: UISceneSession Lifecycle
 
@@ -38,31 +35,25 @@ var questionStart = Category()
                 // Выполняем код для первого запуска
                 UserDefaults.standard.set(true,    forKey: "ifAboutDifferentOn")
                 UserDefaults.standard.set(false,   forKey: "ifHobbiesAndSportsOn")
-                 
                 UserDefaults.standard.set(false,   forKey: "ifLifeQuestionsOn")
-                 UserDefaults.standard.set(false,  forKey: "ifCelebrityQuestionsOn")
-                 UserDefaults.standard.set(false,  forKey: "ifFilmArtQuestionsOn")
-                  UserDefaults.standard.set(false, forKey: "ifNatureQuestionsOn")
-                
+                UserDefaults.standard.set(false,  forKey: "ifCelebrityQuestionsOn")
+                UserDefaults.standard.set(false,  forKey: "ifFilmArtQuestionsOn")
+                UserDefaults.standard.set(false, forKey: "ifNatureQuestionsOn")
                 UserDefaults.standard.set(true, forKey: "shortGameOn")
                 UserDefaults.standard.set(false, forKey: "middleGameOn")
                 UserDefaults.standard.set(false, forKey: "longGameOn")
                 UserDefaults.standard.set(false, forKey: "randomGameOn")
-                
                 UserDefaults.standard.set(10, forKey: "gameTime")
-                
                 UserDefaults.standard.set(questionStart.questionsAboutDifferent, forKey: "questions")
-                
-                
                 UserDefaults.standard.set(true, forKey: "tasksOnOff")
                 UserDefaults.standard.set(true, forKey: "musicOnOff")
-
                 UserDefaults.standard.set(1, forKey: "musicNumber")
                 UserDefaults.standard.set(1, forKey: "clockSoundNumber")
                 UserDefaults.standard.set(1, forKey: "bombSoundNumber")
-                
                 UserDefaults.standard.set(false, forKey: "continue")
                 UserDefaults.standard.set(true, forKey: "animation")
+                UserDefaults.standard.set(false, forKey: "randomCategoryOnOff")
+
 
             }
             
