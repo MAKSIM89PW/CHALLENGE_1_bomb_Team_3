@@ -22,6 +22,8 @@ struct MemorySettings {
     var clockSoundNumber = UserDefaults.standard.integer(forKey: "clockSoundNumber")
     var bombSoundNumber = UserDefaults.standard.integer(forKey: "bombSoundNumber")
     
+    var animation =  UserDefaults.standard.bool(forKey: "animation")
+
     
     
 }
