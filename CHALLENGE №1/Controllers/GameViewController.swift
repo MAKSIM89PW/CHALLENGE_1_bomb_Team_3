@@ -13,7 +13,7 @@ import Foundation
 class GameViewController: UIViewController {
     
     
-    var animationCurrentTime = UserDefaults.standard.integer(forKey: "animationCurrentTime")
+    var animationCurrentTime = UserDefaults.standard.double(forKey: "animationCurrentTime")
     var timer: Timer?
     
     
@@ -52,8 +52,8 @@ class GameViewController: UIViewController {
         print(questionsActual)
         print(gameTimeActual)
         print(animationCurrentTime)
-        
-        
+
+
         animationView!.frame = view.bounds
         
         
@@ -88,8 +88,7 @@ class GameViewController: UIViewController {
     
     
     @IBAction func goButtonAction(_ sender: UIButton) {
-        
-        if animationCurrentTime == 0  {
+        if animationCurrentTime.rounded(.awayFromZero) == 0  {
             let questionSaved = category.getRandomNonRepeatingQuestion(questionsModify: questionsActual)
             questionLabel.text = questionSaved
             UserDefaults.standard.set(questionSaved, forKey: "questionSaved")
@@ -99,8 +98,8 @@ class GameViewController: UIViewController {
             questionLabel.text = questionSaved
         }
         
-        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateAnimationCurrentTime), userInfo: nil, repeats: true)
+    
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAnimationCurrentTime), userInfo: nil, repeats: true)
         
         
         if memorySettings.animation {
@@ -141,8 +140,8 @@ class GameViewController: UIViewController {
     
     @objc func updateAnimationCurrentTime() {
         
-        if goButton.isHidden == true && animationCurrentTime < gameTimeActual {
-            animationCurrentTime += 1
+        if goButton.isHidden == true && animationCurrentTime < Double(gameTimeActual) {
+            animationCurrentTime += 0.1
         } else {
             gameOver()
         }
