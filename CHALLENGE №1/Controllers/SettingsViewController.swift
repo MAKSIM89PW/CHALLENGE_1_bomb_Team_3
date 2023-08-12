@@ -34,6 +34,8 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var animationOnOff: UISwitch!
     
+    @IBOutlet weak var randomCategoryOnOf: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -78,6 +80,12 @@ class SettingsViewController: UIViewController {
             animationOnOff.isOn = true
         } else {
             animationOnOff.isOn  = false
+        }
+        
+        if memory.randomCategory {
+            randomCategoryOnOf.isOn = true
+        } else {
+            randomCategoryOnOf.isOn  = false
         }
         
         setBackgroundMusic()
@@ -148,6 +156,19 @@ class SettingsViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func randomCategorySwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            memory.randomCategory = true
+        } else {
+            memory.randomCategory = false
+        }
+        UserDefaults.standard.set(memory.randomCategory, forKey: "randomCategoryOnOff")
+        UserDefaults.standard.set(false, forKey: "continue")
+
+
+    }
+    
     
     func shortGameOnOff() {
         

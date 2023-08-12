@@ -24,17 +24,10 @@ struct MemorySettings {
     
     var animation =  UserDefaults.standard.bool(forKey: "animation")
 
-    
-    
-}
-
-struct MemoryCategory {
-    
-    
-    
-
+    var randomCategory = UserDefaults.standard.bool(forKey: "randomCategoryOnOff")
     
     var ifContinue = UserDefaults.standard.bool(forKey: "continue")
 
-    
 }
+
+

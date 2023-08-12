@@ -10,7 +10,7 @@ import UIKit
 class CategoryViewController: UIViewController {
     
     var category = Category()
-    var memory = MemoryCategory()
+    var memory = MemorySettings()
     
     
     

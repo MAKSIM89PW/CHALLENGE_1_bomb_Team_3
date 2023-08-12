@@ -23,7 +23,6 @@ class GameViewController: UIViewController {
     var audio = Audio()
     
     var questionsActual = UserDefaults.standard.array(forKey: "questions") as! [String]
-    var memory = MemoryCategory()
     var memorySettings = MemorySettings()
     
     var questionSaved = UserDefaults.standard.string( forKey: "questionSaved")
