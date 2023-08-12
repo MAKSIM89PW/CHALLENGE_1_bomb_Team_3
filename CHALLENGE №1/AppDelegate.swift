@@ -62,6 +62,7 @@ var questionStart = Category()
                 UserDefaults.standard.set(1, forKey: "bombSoundNumber")
                 
                 UserDefaults.standard.set(false, forKey: "continue")
+                UserDefaults.standard.set(true, forKey: "animation")
 
             }
             

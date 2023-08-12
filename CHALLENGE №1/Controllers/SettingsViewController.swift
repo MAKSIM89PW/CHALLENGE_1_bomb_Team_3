@@ -32,6 +32,8 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var bombSound: UIButton!
     
+    @IBOutlet weak var animationOnOff: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,6 +59,9 @@ class SettingsViewController: UIViewController {
         longGameOnOff()
         randomGameOnOff()
         
+      
+        
+        
         if memory.tasksOnOff {
             gameWithTask.isOn = true
         } else {
@@ -69,6 +74,12 @@ class SettingsViewController: UIViewController {
             gameWithMusic.isOn  = false
         }
 
+        if memory.animation {
+            animationOnOff.isOn = true
+        } else {
+            animationOnOff.isOn  = false
+        }
+        
         setBackgroundMusic()
         setClockMusic()
         setBombMusic()
@@ -128,6 +139,15 @@ class SettingsViewController: UIViewController {
         
     }
     
+    @IBAction func animationOnOff(_ sender: UISwitch) {
+        
+        if sender.isOn {
+            memory.animation = true
+        } else {
+            memory.animation = false
+        }
+        
+    }
     
     func shortGameOnOff() {
         
@@ -296,6 +316,7 @@ class SettingsViewController: UIViewController {
         
     }
     
+  
     
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -317,6 +338,8 @@ class SettingsViewController: UIViewController {
         UserDefaults.standard.set(memory.musicNumber, forKey: "musicNumber")
         UserDefaults.standard.set(memory.clockSoundNumber, forKey: "clockSoundNumber")
         UserDefaults.standard.set(memory.bombSoundNumber, forKey: "bombSoundNumber")
+
+        UserDefaults.standard.set(memory.animation, forKey: "animation")
 
     
         UserDefaults.standard.synchronize() // Синхронизация

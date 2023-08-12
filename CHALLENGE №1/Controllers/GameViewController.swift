@@ -28,6 +28,7 @@ class GameViewController: UIViewController {
     
     var questionSaved = UserDefaults.standard.string( forKey: "questionSaved")
     
+    let animationActual = UserDefaults.standard.integer(forKey: "animation")
     
     let gameTimeActual =  UserDefaults.standard.integer(forKey: "gameTime")
     
@@ -45,6 +46,8 @@ class GameViewController: UIViewController {
         UserDefaults.standard.set(true, forKey: "continue")
         
         
+      
+
         // MARK: Проверка:
         
         print(questionsActual)
@@ -70,9 +73,8 @@ class GameViewController: UIViewController {
     
     
     @IBAction func goBackFromStartScreenButtonAction(_ sender: UIButton) {
+        
         animationView.stop()
-        
-        
         audio.stopMusic()
         timer?.invalidate()
         timer = nil
@@ -102,10 +104,10 @@ class GameViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateAnimationCurrentTime), userInfo: nil, repeats: true)
         
         
-        
-        animationView!.loopMode = .loop
-        animationView.play()
-        
+        if memorySettings.animation {
+            animationView!.loopMode = .loop
+            animationView.play()
+        }
         
         audio.playMusic()
         goButton.isHidden = true
