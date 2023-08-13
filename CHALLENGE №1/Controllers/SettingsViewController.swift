@@ -29,19 +29,19 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shortG.layer.cornerRadius = 12
+        shortG.layer.cornerRadius = 20
         shortG.layer.borderColor = UIColor.black.cgColor
         shortG.layer.borderWidth = 1
         
-        middleG.layer.cornerRadius = 12
+        middleG.layer.cornerRadius = 20
         middleG.layer.borderColor = UIColor.black.cgColor
         middleG.layer.borderWidth = 1
         
-        longG.layer.cornerRadius = 12
+        longG.layer.cornerRadius = 20
         longG.layer.borderColor = UIColor.black.cgColor
         longG.layer.borderWidth = 1
         
-        randomG.layer.cornerRadius = 12
+        randomG.layer.cornerRadius = 20
         randomG.layer.borderColor = UIColor.black.cgColor
         randomG.layer.borderWidth = 1
         
@@ -208,6 +208,7 @@ class SettingsViewController: UIViewController {
     
     func setBackgroundMusic() {
         
+        
         let menuItem1 = UIAction(title: "Мелодия 1") { action in
             self.memory.musicNumber = 1
         }
@@ -227,6 +228,7 @@ class SettingsViewController: UIViewController {
         } else {
             menuItem3.state = .on
         }
+        
        
         backMusicChoice.menu = UIMenu(title: "Custom Menu", children: [menuItem1, menuItem2, menuItem3])
         backMusicChoice.showsMenuAsPrimaryAction = true
