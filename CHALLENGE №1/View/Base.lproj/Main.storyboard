@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -16,23 +16,23 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="CHALLENGE__1_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="pN0-4p-HGV">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bomb" translatesAutoresizingMaskIntoConstraints="NO" id="psn-mR-gnN">
-                                <rect key="frame" x="9" y="143" width="375" height="409"/>
+                                <rect key="frame" x="26.666666666666657" y="143" width="375" height="409"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Бомба" translatesAutoresizingMaskIntoConstraints="NO" id="uu9-vw-2xv">
-                                <rect key="frame" x="81" y="88" width="231" height="45"/>
+                                <rect key="frame" x="98.666666666666686" y="88" width="231" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="l6Q-5L-ZH6"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTn-ek-A9B">
-                                <rect key="frame" x="57" y="601" width="279" height="79"/>
+                                <rect key="frame" x="74.666666666666686" y="675" width="279" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="RGH-4M-e4W"/>
                                     <constraint firstAttribute="height" constant="79" id="fvU-x0-mrV"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра для компании" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="VgV-7R-VI8">
-                                <rect key="frame" x="5" y="20" width="383" height="48"/>
+                                <rect key="frame" x="5" y="20" width="418" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="PbT-TS-pin"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xky-Kg-Qnp">
-                                <rect key="frame" x="57" y="690" width="279" height="79"/>
+                                <rect key="frame" x="74.666666666666686" y="764" width="279" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="GRW-OD-rte"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="Up3-gg-Dqe"/>
@@ -79,7 +79,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc2-9x-LIg">
-                                <rect key="frame" x="258" y="779" width="110" height="48"/>
+                                <rect key="frame" x="293" y="853" width="110" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="MSW-IK-QG9"/>
                                     <constraint firstAttribute="height" constant="48" id="YYJ-aH-6uK"/>
@@ -94,7 +94,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-O8-jIz">
-                                <rect key="frame" x="25" y="717" width="59" height="110"/>
+                                <rect key="frame" x="25" y="791" width="59" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="59" id="1X8-DI-77k"/>
                                     <constraint firstAttribute="height" constant="110" id="EFP-nu-g5v"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzs-sM-Xhy">
-                                <rect key="frame" x="57" y="512" width="279" height="79"/>
+                                <rect key="frame" x="74.666666666666686" y="586" width="279" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="QPO-zp-Rmx"/>
                                     <constraint firstAttribute="height" constant="79" id="diN-h6-l7v"/>
@@ -172,21 +172,21 @@
             <objects>
                 <viewController storyboardIdentifier="GameViewController" id="o9A-Wn-2sN" customClass="GameViewController" customModule="CHALLENGE__1_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nPs-NK-wzP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-yO-5uv">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <view autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-fW-Fj5" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="0.0" y="220" width="393" height="469"/>
+                                <rect key="frame" x="0.0" y="220" width="428" height="543"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="BOMB2"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rt-yP-16c">
-                                <rect key="frame" x="59.666666666666657" y="699" width="274" height="79"/>
+                                <rect key="frame" x="77" y="773" width="274" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="ebS-OY-MJe"/>
                                     <constraint firstAttribute="height" constant="79" id="w2Y-kd-rL8"/>
@@ -199,7 +199,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Запустить">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="DelaGothicOne-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="24"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -210,7 +210,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD6-s4-UQA">
-                                <rect key="frame" x="331" y="25" width="37" height="38"/>
+                                <rect key="frame" x="366" y="25" width="37" height="38"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="image 8"/>
                                 <connections>
@@ -218,14 +218,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="↳ Title" translatesAutoresizingMaskIntoConstraints="NO" id="zWU-Vm-rLN">
-                                <rect key="frame" x="96.666666666666686" y="20" width="200" height="40"/>
+                                <rect key="frame" x="114" y="20" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="7UF-Tr-v3X"/>
                                     <constraint firstAttribute="height" constant="40" id="Rqz-f3-Edx"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="68T-pF-UfF">
-                                <rect key="frame" x="0.0" y="100" width="393" height="100"/>
+                                <rect key="frame" x="0.0" y="100" width="428" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="1IP-uN-fOI"/>
                                     <constraint firstAttribute="height" constant="100" id="zZ5-S0-PqJ"/>
@@ -234,7 +234,7 @@
                                     <fragment content="Нажмите “Запустить” чтобы начать игру">
                                         <attributes>
                                             <color key="NSColor" red="0.54509803921568623" green="0.23921568627450979" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="32" name="DelaGothicOne-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="32"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -242,7 +242,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNA-bz-eIs">
-                                <rect key="frame" x="15" y="20" width="73.666666666666671" height="35"/>
+                                <rect key="frame" x="15" y="20" width="86" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Arrow" title="Button">
                                     <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -297,17 +297,17 @@
             <objects>
                 <viewController storyboardIdentifier="EndGameViewController" id="WGj-Qr-o1S" customClass="EndGameViewController" customModule="CHALLENGE__1_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nbT-Rj-w8Z">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="qtf-1l-Lls">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Game Over" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-Of-2tr">
-                                <rect key="frame" x="0.0" y="225" width="393" height="295"/>
+                                <rect key="frame" x="0.0" y="213" width="428" height="381"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWu-EP-rk6">
-                                <rect key="frame" x="59.666666666666657" y="615" width="274" height="79"/>
+                                <rect key="frame" x="77" y="689" width="274" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="r1s-0V-pQN"/>
                                     <constraint firstAttribute="height" constant="79" id="wJ5-Xw-oFU"/>
@@ -320,7 +320,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Другое Задание">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="DelaGothicOne-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="24"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -331,7 +331,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HRD-0V-wEN">
-                                <rect key="frame" x="0.0" y="530" width="393" height="70"/>
+                                <rect key="frame" x="0.0" y="604" width="428" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="AIl-mY-Rge"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="oOO-2v-ido"/>
@@ -340,7 +340,7 @@
                                     <fragment content="В следующем раунде после каждого ответа хлопать в ладоши">
                                         <attributes>
                                             <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="20"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -348,14 +348,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="↳ Title" translatesAutoresizingMaskIntoConstraints="NO" id="3Kh-qp-Wdd">
-                                <rect key="frame" x="96.666666666666686" y="74" width="200" height="50"/>
+                                <rect key="frame" x="114" y="62" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Chu-4i-OsB"/>
                                     <constraint firstAttribute="width" constant="200" id="ONw-0f-BNO"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="z5b-2q-rKC">
-                                <rect key="frame" x="0.0" y="139" width="393" height="76"/>
+                                <rect key="frame" x="0.0" y="127" width="428" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="0AZ-1m-s3w"/>
                                 </constraints>
@@ -365,7 +365,7 @@
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="24" name="DelaGothicOne-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="24"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -374,7 +374,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmq-xk-d6D">
-                                <rect key="frame" x="59.666666666666657" y="709" width="274" height="79"/>
+                                <rect key="frame" x="77" y="783" width="274" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="3K3-zU-hAK"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="Jev-u4-D3N"/>
@@ -389,7 +389,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Начать Заново">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="DelaGothicOne-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="24"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -400,7 +400,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL0-LQ-5u8">
-                                <rect key="frame" x="15" y="79" width="75.666666666666671" height="35"/>
+                                <rect key="frame" x="15" y="67" width="86" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="Arrow" title="Button">
                                     <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -463,12 +463,11 @@
             <objects>
                 <viewController id="eVJ-kU-wiE" customClass="CategoryViewController" customModule="CHALLENGE__1_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2lx-E2-L4q">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-N2-YLx">
-                                <rect key="frame" x="0.0" y="-84" width="414" height="1280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-N2-YLx">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjc-Gr-qnS">
                                 <rect key="frame" x="10" y="15" width="86" height="60"/>
@@ -485,7 +484,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Категории" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="DzA-i3-C2R">
-                                <rect key="frame" x="105" y="15" width="183" height="60"/>
+                                <rect key="frame" x="122.66666666666669" y="15" width="183" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="rBK-Dt-mWd"/>
                                 </constraints>
@@ -494,13 +493,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="NLO-EC-bxA">
-                                <rect key="frame" x="10" y="280.66666666666669" width="373" height="561.33333333333326"/>
+                                <rect key="frame" x="10" y="302" width="408" height="614"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QaJ-dm-0mB">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="182.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-Gb-Bew">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="182.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="X6L-Gb-Bew" secondAttribute="height" multiplier="1:1" id="lek-Q1-RRB"/>
                                                 </constraints>
@@ -513,7 +512,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIa-f2-dHB">
-                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="182.33333333333334"/>
+                                                <rect key="frame" x="208" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nIa-f2-dHB" secondAttribute="height" multiplier="1:1" id="zlJ-Io-G49"/>
                                                 </constraints>
@@ -528,10 +527,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-Zs-Mev">
-                                        <rect key="frame" x="0.0" y="189.33333333333331" width="373" height="182.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="207" width="408" height="200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-qO-Z37">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="182.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DgE-qO-Z37" secondAttribute="height" multiplier="1:1" id="fAv-Zh-5xh"/>
                                                 </constraints>
@@ -544,7 +543,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH8-Xx-eLZ">
-                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="182.66666666666666"/>
+                                                <rect key="frame" x="208" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HH8-Xx-eLZ" secondAttribute="height" multiplier="1:1" id="FOa-Vu-TkP"/>
                                                 </constraints>
@@ -559,10 +558,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="thh-Dl-0Kl">
-                                        <rect key="frame" x="0.0" y="378.99999999999994" width="373" height="182.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="414" width="408" height="200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCW-1b-jQ7">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="182.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NCW-1b-jQ7" secondAttribute="height" multiplier="1:1" id="DCA-AR-oNY"/>
                                                 </constraints>
@@ -575,7 +574,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvh-Fm-dUG">
-                                                <rect key="frame" x="190.66666666666663" y="0.0" width="182.33333333333337" height="182.33333333333334"/>
+                                                <rect key="frame" x="208" y="0.0" width="200" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gvh-Fm-dUG" secondAttribute="height" multiplier="1:1" id="ump-rI-p1t"/>
                                                 </constraints>
@@ -601,11 +600,15 @@
                         <viewLayoutGuide key="safeArea" id="XwW-kG-iAJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Mz8-N2-YLx" firstAttribute="leading" secondItem="XwW-kG-iAJ" secondAttribute="leading" id="08h-gS-Sz3"/>
                             <constraint firstItem="gjc-Gr-qnS" firstAttribute="top" secondItem="XwW-kG-iAJ" secondAttribute="top" constant="15" id="4ls-YV-vW5"/>
                             <constraint firstItem="gjc-Gr-qnS" firstAttribute="leading" secondItem="2lx-E2-L4q" secondAttribute="leading" constant="10" id="Bqe-yP-lXE"/>
+                            <constraint firstItem="XwW-kG-iAJ" firstAttribute="trailing" secondItem="Mz8-N2-YLx" secondAttribute="trailing" id="Cga-np-qrw"/>
                             <constraint firstItem="NLO-EC-bxA" firstAttribute="leading" secondItem="XwW-kG-iAJ" secondAttribute="leading" constant="10" id="ELm-eJ-VEZ"/>
+                            <constraint firstItem="Mz8-N2-YLx" firstAttribute="top" secondItem="2lx-E2-L4q" secondAttribute="top" id="KiO-GX-HNO"/>
                             <constraint firstItem="DzA-i3-C2R" firstAttribute="centerX" secondItem="2lx-E2-L4q" secondAttribute="centerX" id="QeB-4c-5cy"/>
                             <constraint firstItem="XwW-kG-iAJ" firstAttribute="bottom" secondItem="NLO-EC-bxA" secondAttribute="bottom" constant="10" id="RCw-0E-fNP"/>
+                            <constraint firstAttribute="bottom" secondItem="Mz8-N2-YLx" secondAttribute="bottom" id="Xqs-N4-Ybq"/>
                             <constraint firstItem="DzA-i3-C2R" firstAttribute="top" secondItem="XwW-kG-iAJ" secondAttribute="top" constant="15" id="gXN-gH-1VV"/>
                             <constraint firstItem="XwW-kG-iAJ" firstAttribute="trailing" secondItem="NLO-EC-bxA" secondAttribute="trailing" constant="10" id="xq9-VS-CBN"/>
                             <constraint firstItem="DzA-i3-C2R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gjc-Gr-qnS" secondAttribute="trailing" constant="8" symbolic="YES" id="yuV-JI-NAc"/>
@@ -630,14 +633,14 @@
             <objects>
                 <viewController id="8GG-qV-qkw" customClass="HelpViewController" customModule="CHALLENGE__1_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OB9-V6-CQ0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="nTS-zh-mUv">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWO-I7-W3I">
-                                <rect key="frame" x="20" y="15" width="99" height="60"/>
+                                <rect key="frame" x="19.999999999999993" y="15" width="116.33333333333331" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9Cs-9b-zzP"/>
                                 </constraints>
@@ -651,7 +654,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Помощь" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-FB-gvU">
-                                <rect key="frame" x="124.00000000000001" y="15" width="145.33333333333337" height="60"/>
+                                <rect key="frame" x="141.33333333333331" y="15" width="145.33333333333331" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="nLa-3b-2Su"/>
                                 </constraints>
@@ -660,20 +663,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUd-5b-eIY">
-                                <rect key="frame" x="0.0" y="80" width="393" height="772"/>
+                                <rect key="frame" x="0.0" y="80" width="428" height="846"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ti6-uj-UBc">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1900"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RulesViewController" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-pr-bT2">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="2400"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="1900"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Znf-pr-bT2" firstAttribute="leading" secondItem="ti6-uj-UBc" secondAttribute="leading" id="1qe-mF-iAS"/>
                                             <constraint firstAttribute="trailing" secondItem="Znf-pr-bT2" secondAttribute="trailing" id="FEN-iV-AbY"/>
-                                            <constraint firstAttribute="height" constant="2400" id="GxS-Uu-1tF"/>
+                                            <constraint firstAttribute="height" constant="1900" id="GxS-Uu-1tF"/>
                                             <constraint firstItem="Znf-pr-bT2" firstAttribute="top" secondItem="ti6-uj-UBc" secondAttribute="top" id="N2l-F7-t6e"/>
                                             <constraint firstItem="Znf-pr-bT2" firstAttribute="top" secondItem="ti6-uj-UBc" secondAttribute="top" id="Nrd-rc-qrp"/>
                                             <constraint firstItem="Znf-pr-bT2" firstAttribute="leading" secondItem="ti6-uj-UBc" secondAttribute="leading" id="OxC-D7-lzt"/>
@@ -720,46 +723,32 @@
             <objects>
                 <viewController id="jI2-n8-SmI" customClass="SettingsViewController" customModule="CHALLENGE__1_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Wc-7i-vMI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="glN-EY-nWJ">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aGM-rd-6re">
-                                <rect key="frame" x="19.999999999999993" y="80" width="112.33333333333331" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время игры" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aGM-rd-6re">
+                                <rect key="frame" x="19.999999999999993" y="80" width="118.33333333333331" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GNG-vF-uvj"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Время игры">
-                                        <attributes>
-                                            <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rN8-1y-fDo">
-                                <rect key="frame" x="120.33333333333333" y="10" width="152.66666666666669" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rN8-1y-fDo">
+                                <rect key="frame" x="133.33333333333331" y="10" width="161.33333333333331" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hT0-4p-cHb"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Настройки">
-                                        <attributes>
-                                            <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="30" name="DelaGothicOne-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-Wm-axl">
-                                <rect key="frame" x="47.666666666666657" y="120" width="298" height="114"/>
+                                <rect key="frame" x="65" y="120" width="298" height="114"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Fhp-79-kUc">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="114"/>
@@ -780,7 +769,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Короткое">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -806,7 +795,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Длинное">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -834,7 +823,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Среднее">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -859,7 +848,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Случайное">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -874,16 +863,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ul5-dT-GmU">
-                                <rect key="frame" x="20" y="244" width="353" height="31"/>
+                                <rect key="frame" x="20" y="244" width="388" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Игра с заданиями" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="esu-nD-07z">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="31"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="31"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" red="0.50588235290000005" green="0.25490196079999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="highlightedColor" red="0.50588235290000005" green="0.18823529410000001" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3jk-F6-Ddk">
-                                        <rect key="frame" x="287" y="0.0" width="68" height="31"/>
+                                        <rect key="frame" x="322" y="0.0" width="68" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="66" id="w75-mX-qXh"/>
                                         </constraints>
@@ -895,23 +884,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="S3K-wJ-RIF">
-                                <rect key="frame" x="20" y="280" width="353" height="40"/>
+                                <rect key="frame" x="20" y="280" width="388" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-kK-UlR">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="40"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Фоновая музыка">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Фоновая музыка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-kK-UlR">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhp-Np-ttb">
-                                        <rect key="frame" x="287" y="0.0" width="68" height="40"/>
+                                        <rect key="frame" x="322" y="0.0" width="68" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="66" id="16s-yS-Amz"/>
                                         </constraints>
@@ -926,23 +908,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-DZ-cNq">
-                                <rect key="frame" x="20" y="415" width="353" height="40"/>
+                                <rect key="frame" x="20" y="415" width="388" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXC-MA-Eju">
-                                        <rect key="frame" x="0.0" y="0.0" width="232.66666666666666" height="40"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Фоновая музыка">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Фоновая музыка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXC-MA-Eju">
+                                        <rect key="frame" x="0.0" y="0.0" width="221.33333333333334" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0Z-hr-fK0">
-                                        <rect key="frame" x="232.66666666666666" y="0.0" width="120.33333333333334" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0Z-hr-fK0">
+                                        <rect key="frame" x="221.33333333333337" y="0.0" width="166.66666666666663" height="40"/>
                                         <menu key="menu" title="Фоновая музыка" id="dso-H6-2IY">
                                             <children>
                                                 <command title="Музыка 1" menuElementState="on" id="9gi-Gk-aXl"/>
@@ -954,12 +929,16 @@
                                                 <fragment content="Мелодия 3">
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="16"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Мелодия 3">
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -968,42 +947,32 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l1H-qU-RFi">
-                                <rect key="frame" x="20" y="460" width="353" height="40"/>
+                                <rect key="frame" x="20" y="460" width="388" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="E5n-Rb-sor">
-                                        <rect key="frame" x="0.0" y="0.0" width="259.33333333333331" height="40"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Тиканье Бомбы
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="E5n-Rb-sor">
+                                        <rect key="frame" x="0.0" y="0.0" width="247.66666666666666" height="40"/>
+                                        <string key="text">Тиканье Бомбы
 </string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-r3-JTm">
-                                        <rect key="frame" x="259.33333333333331" y="0.0" width="93.666666666666686" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-r3-JTm">
+                                        <rect key="frame" x="247.66666666666669" y="0.0" width="140.33333333333331" height="40"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                         <menu key="menu" id="rh4-UC-k8Y">
                                             <children>
                                                 <command title="Item 1" id="OSQ-MW-yh0"/>
                                                 <command title="Item 2" id="Rcg-qG-4BS"/>
                                             </children>
                                         </menu>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Часы 2">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <state key="normal" title="Часы 2">
+                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Часы 2">
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1011,23 +980,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="kUe-If-4X2">
-                                <rect key="frame" x="20" y="325" width="353" height="40"/>
+                                <rect key="frame" x="20" y="325" width="388" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-gY-7CK">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="40"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Анимация в игре">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Анимация в игре" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-gY-7CK">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmA-4C-hzq">
-                                        <rect key="frame" x="287" y="0.0" width="68" height="40"/>
+                                        <rect key="frame" x="322" y="0.0" width="68" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="66" id="UiB-Th-Rdr"/>
                                         </constraints>
@@ -1056,16 +1018,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="CHy-A1-MNH">
-                                <rect key="frame" x="20" y="505" width="353" height="40"/>
+                                <rect key="frame" x="20" y="505" width="388" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Взрыв бомбы" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-NW-E0X">
-                                        <rect key="frame" x="0.0" y="0.0" width="238.33333333333334" height="40"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" red="0.50588235290000005" green="0.25490196079999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3Z-Ck-uIx">
-                                        <rect key="frame" x="238.33333333333329" y="0.0" width="114.66666666666666" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3Z-Ck-uIx">
+                                        <rect key="frame" x="228" y="0.0" width="160" height="40"/>
                                         <menu key="menu" id="T5e-TW-I4h">
                                             <children>
                                                 <command title="Item 1" id="rYl-5u-Fjc"/>
@@ -1077,12 +1039,16 @@
                                                 <fragment content="Взрыв 1">
                                                     <attributes>
                                                         <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <font key="NSFont" size="16" name="DelaGothicOne-Regular"/>
+                                                        <font key="NSFont" metaFont="system" size="16"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <buttonConfiguration key="configuration" style="gray" title="Взрыв 1">
+                                            <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1090,23 +1056,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="foB-Zz-559">
-                                <rect key="frame" x="20" y="370" width="353" height="40"/>
+                                <rect key="frame" x="20" y="370" width="388" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-R8-Hvn">
-                                        <rect key="frame" x="0.0" y="0.0" width="287" height="40"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Случайная категория">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="DelaGothicOne-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Случайная категория" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-R8-Hvn">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-MZ-n5A">
-                                        <rect key="frame" x="287" y="0.0" width="68" height="40"/>
+                                        <rect key="frame" x="322" y="0.0" width="68" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="66" id="61c-G1-DVc"/>
                                         </constraints>
@@ -1134,7 +1093,7 @@
                             <constraint firstItem="rN8-1y-fDo" firstAttribute="centerX" secondItem="5Wc-7i-vMI" secondAttribute="centerX" id="7hn-wy-8Yp"/>
                             <constraint firstItem="CHy-A1-MNH" firstAttribute="top" secondItem="l1H-qU-RFi" secondAttribute="bottom" constant="5" id="Ad2-b0-fYC"/>
                             <constraint firstItem="aGM-rd-6re" firstAttribute="leading" secondItem="MRk-bl-x1J" secondAttribute="leading" constant="20" id="As0-fe-vg6"/>
-                            <constraint firstItem="glN-EY-nWJ" firstAttribute="trailing" secondItem="MRk-bl-x1J" secondAttribute="trailing" id="CQu-Mx-2fj"/>
+                            <constraint firstItem="glN-EY-nWJ" firstAttribute="trailing" secondItem="5Wc-7i-vMI" secondAttribute="trailing" id="CQu-Mx-2fj"/>
                             <constraint firstItem="S3K-wJ-RIF" firstAttribute="centerX" secondItem="5Wc-7i-vMI" secondAttribute="centerX" id="Der-Zx-Mvy"/>
                             <constraint firstItem="vKR-DZ-cNq" firstAttribute="centerX" secondItem="5Wc-7i-vMI" secondAttribute="centerX" id="F3J-Fe-imW"/>
                             <constraint firstItem="l1H-qU-RFi" firstAttribute="leading" secondItem="MRk-bl-x1J" secondAttribute="leading" constant="20" id="HRE-Nh-NT7"/>
@@ -1204,7 +1163,7 @@
         <image name="bomb" width="375" height="409"/>
         <image name="image 8" width="37" height="38"/>
         <image name="Бомба" width="231" height="45"/>
-        <image name="Настройки" width="22.666666030883789" height="45.666667938232422"/>
+        <image name="Настройки" width="68" height="137"/>
         <image name="Правила" width="137" height="62"/>
         <image name="↳ Title" width="90" height="29"/>
         <systemColor name="systemBackgroundColor">
