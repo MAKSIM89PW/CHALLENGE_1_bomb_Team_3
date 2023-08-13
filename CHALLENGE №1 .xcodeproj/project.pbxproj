@@ -10,7 +10,7 @@
 		0B0666312A851B6300D64C46 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0666302A851B6300D64C46 /* SettingsViewController.swift */; };
 		0B0666332A85454400D64C46 /* TaskBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0666322A85454400D64C46 /* TaskBrain.swift */; };
 		0B0666352A86409300D64C46 /* AudioPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0666342A86409300D64C46 /* AudioPlayers.swift */; };
-		0B0666372A8644C800D64C46 /* MemoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0666362A8644C800D64C46 /* MemoryBrain.swift */; };
+		0B0666372A8644C800D64C46 /* MemorySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0666362A8644C800D64C46 /* MemorySettings.swift */; };
 		0B0908F62A82A01C006A5BC6 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0908F52A82A01C006A5BC6 /* EndGameViewController.swift */; };
 		0B0908F82A82A052006A5BC6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0908F72A82A052006A5BC6 /* CategoryViewController.swift */; };
 		0B0908FA2A82A06D006A5BC6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0908F92A82A06D006A5BC6 /* HelpViewController.swift */; };
@@ -43,7 +43,7 @@
 		0B0666302A851B6300D64C46 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0B0666322A85454400D64C46 /* TaskBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBrain.swift; sourceTree = "<group>"; };
 		0B0666342A86409300D64C46 /* AudioPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayers.swift; sourceTree = "<group>"; };
-		0B0666362A8644C800D64C46 /* MemoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryBrain.swift; sourceTree = "<group>"; };
+		0B0666362A8644C800D64C46 /* MemorySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorySettings.swift; sourceTree = "<group>"; };
 		0B0908F52A82A01C006A5BC6 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		0B0908F72A82A052006A5BC6 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		0B0908F92A82A06D006A5BC6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 				0BF395322A83AEE600BFA85C /* CategoryBrain.swift */,
 				0B0666322A85454400D64C46 /* TaskBrain.swift */,
 				0B0666342A86409300D64C46 /* AudioPlayers.swift */,
-				0B0666362A8644C800D64C46 /* MemoryBrain.swift */,
+				0B0666362A8644C800D64C46 /* MemorySettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF395332A83AEE600BFA85C /* CategoryBrain.swift in Sources */,
-				0B0666372A8644C800D64C46 /* MemoryBrain.swift in Sources */,
+				0B0666372A8644C800D64C46 /* MemorySettings.swift in Sources */,
 				0B0908FA2A82A06D006A5BC6 /* HelpViewController.swift in Sources */,
 				0BAA16232A80FF5200B9FDFD /* GameViewController.swift in Sources */,
 				0B0666332A85454400D64C46 /* TaskBrain.swift in Sources */,

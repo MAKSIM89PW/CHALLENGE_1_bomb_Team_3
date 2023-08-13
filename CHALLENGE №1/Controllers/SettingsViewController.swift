@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController {
     
     let purpleColor  = UIColor(red: 129/255, green: 48/255, blue: 167/255, alpha: 1)
     let yellowColor  = UIColor(red: 247/255, green: 248/255, blue: 11/255, alpha: 1)
+
     
     @IBOutlet weak var shortG: UIButton!
     @IBOutlet weak var middleG: UIButton!
@@ -25,6 +26,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var bombSound: UIButton!
     @IBOutlet weak var animationOnOff: UISwitch!
     @IBOutlet weak var randomCategoryOnOf: UISwitch!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,7 @@ class SettingsViewController: UIViewController {
         randomG.layer.cornerRadius = 20
         randomG.layer.borderColor = UIColor.black.cgColor
         randomG.layer.borderWidth = 1
+        
         
         shortGameOnOff()
         middleGameOnOff()
