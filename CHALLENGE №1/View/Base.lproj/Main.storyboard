@@ -101,7 +101,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" cornerRadius="0.0" image="Настройки 1"/>
+                                    <backgroundConfiguration key="background" cornerRadius="0.0" image="Settings"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goToSettingsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieG-VS-2gZ"/>
@@ -1084,7 +1084,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SlM-8i-wbJ"/>
+        <segue reference="PM1-8J-ShH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Arrow" width="11" height="19"/>
@@ -1096,11 +1096,11 @@
         <image name="Category6Off" width="206" height="225"/>
         <image name="Game Over" width="249" height="300"/>
         <image name="RulesViewController" width="386" height="1887"/>
+        <image name="Settings" width="22.666666030883789" height="45.666667938232422"/>
         <image name="background" width="591" height="1280"/>
         <image name="bomb" width="375" height="409"/>
         <image name="image 8" width="37" height="38"/>
         <image name="Бомба" width="231" height="45"/>
-        <image name="Настройки 1" width="68" height="137"/>
         <image name="Правила" width="137" height="62"/>
         <image name="↳ Title" width="90" height="29"/>
         <systemColor name="systemBackgroundColor">
