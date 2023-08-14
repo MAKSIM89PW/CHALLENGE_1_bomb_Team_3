@@ -40,9 +40,10 @@ class GameViewController: UIViewController {
         
         // MARK: Проверка
         
-        print(questionsActual)
+        print(questionsActual.count)
         print(gameTimeActual)
         print(animationCurrentTime)
+        
         animationView!.frame = view.bounds
         animationView!.contentMode = .scaleAspectFit
         animationView!.stop()
@@ -67,14 +68,17 @@ class GameViewController: UIViewController {
     
     
     @IBAction func goButtonAction(_ sender: UIButton) {
-        if animationCurrentTime.rounded(.awayFromZero) == 0  {
+
+        if animationCurrentTime.rounded(.awayFromZero) == 0 {
             let questionSaved = category.getRandomNonRepeatingQuestion(questionsModify: questionsActual)
             questionLabel.text = questionSaved
             UserDefaults.standard.set(questionSaved, forKey: "questionSaved")
             UserDefaults.standard.set(category.newArrayOfQuestion, forKey: "questions")
             UserDefaults.standard.synchronize() // Синхронизация
+
         } else {
-            questionLabel.text = questionSaved
+           
+            questionLabel.text = UserDefaults.standard.string(forKey: "questionSaved")
         }
         
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAnimationCurrentTime), userInfo: nil, repeats: true)
@@ -96,6 +100,7 @@ class GameViewController: UIViewController {
         stopButton.isHidden = true
         timer?.invalidate()
         timer = nil
+
     }
     
     func gameOver() {
@@ -113,7 +118,7 @@ class GameViewController: UIViewController {
     
     @objc func updateAnimationCurrentTime() {
         
-        if goButton.isHidden == true && animationCurrentTime < Double(gameTimeActual) {
+        if animationCurrentTime < Double(gameTimeActual) && goButton.isHidden == true  {
             animationCurrentTime += 0.1
         } else {
             gameOver()
