@@ -804,7 +804,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Игра с заданиями" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="esu-nD-07z">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="31"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.50588235290000005" green="0.25490196079999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="highlightedColor" red="0.50588235290000005" green="0.18823529410000001" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
@@ -825,7 +825,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Фоновая музыка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Uw-kK-UlR">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="40"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -845,57 +845,49 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-DZ-cNq">
-                                <rect key="frame" x="20" y="415" width="388" height="40"/>
+                                <rect key="frame" x="20" y="420" width="388" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Фоновая музыка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZXC-MA-Eju">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="40"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="40"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0Z-hr-fK0">
-                                        <rect key="frame" x="225" y="0.0" width="163" height="40"/>
-                                        <menu key="menu" title="Фоновая музыка" id="dso-H6-2IY">
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5k-mM-Vzn">
+                                        <rect key="frame" x="241" y="0.0" width="147" height="40"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                        <menu key="menu" id="xfp-7r-9nq">
                                             <children>
-                                                <command title="Музыка 1" menuElementState="on" id="9gi-Gk-aXl"/>
-                                                <command title="Музыка 2" id="cTe-bt-T3b"/>
+                                                <command title="Item 1" id="o0k-2R-krr"/>
+                                                <command title="Item 2" id="Opa-iU-qnU"/>
                                             </children>
                                         </menu>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Мелодия 3">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" metaFont="system" size="16"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <state key="normal" title="Часы 2">
+                                            <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="gray" title="Мелодия 3">
+                                        <buttonConfiguration key="configuration" style="gray" title="Часы 2">
                                             <fontDescription key="titleFontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="16"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="I6x-9F-kD4"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="InH-Ag-eVK"/>
+                                    <constraint firstAttribute="height" constant="40" id="InH-Ag-eVK"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l1H-qU-RFi">
-                                <rect key="frame" x="20" y="460" width="388" height="40"/>
+                                <rect key="frame" x="20" y="465" width="388" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="E5n-Rb-sor">
-                                        <rect key="frame" x="0.0" y="0.0" width="243.66666666666666" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="40"/>
                                         <string key="text">Тиканье Бомбы
 </string>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-r3-JTm">
-                                        <rect key="frame" x="243.66666666666669" y="0.0" width="144.33333333333331" height="40"/>
+                                        <rect key="frame" x="234" y="0.0" width="154" height="40"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                         <menu key="menu" id="rh4-UC-k8Y">
                                             <children>
@@ -921,7 +913,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Анимация в игре" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-gY-7CK">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="40"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -955,16 +947,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="CHy-A1-MNH">
-                                <rect key="frame" x="20" y="505" width="388" height="40"/>
+                                <rect key="frame" x="20" y="510" width="388" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Взрыв бомбы" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ex7-NW-E0X">
-                                        <rect key="frame" x="0.0" y="0.0" width="231.33333333333334" height="40"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="221.66666666666666" height="40"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.50588235290000005" green="0.25490196079999999" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3Z-Ck-uIx">
-                                        <rect key="frame" x="231.33333333333337" y="0.0" width="156.66666666666663" height="40"/>
+                                        <rect key="frame" x="221.66666666666663" y="0.0" width="166.33333333333337" height="40"/>
                                         <menu key="menu" id="T5e-TW-I4h">
                                             <children>
                                                 <command title="Item 1" id="rYl-5u-Fjc"/>
@@ -997,7 +989,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Случайная категория" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-R8-Hvn">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="40"/>
-                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="DelaGothicOne-Regular" family="Dela Gothic One" pointSize="18"/>
                                         <color key="textColor" red="0.5450980392" green="0.23921568630000001" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1056,7 +1048,7 @@
                             <constraint firstItem="CHy-A1-MNH" firstAttribute="centerX" secondItem="5Wc-7i-vMI" secondAttribute="centerX" id="oEq-dG-rxv"/>
                             <constraint firstItem="bRO-wE-JFF" firstAttribute="leading" secondItem="MRk-bl-x1J" secondAttribute="leading" constant="10" id="r1v-dq-e6K"/>
                             <constraint firstItem="l1H-qU-RFi" firstAttribute="centerX" secondItem="5Wc-7i-vMI" secondAttribute="centerX" id="sek-ke-qKb"/>
-                            <constraint firstItem="vKR-DZ-cNq" firstAttribute="top" secondItem="foB-Zz-559" secondAttribute="bottom" constant="5" id="tsP-es-SqI"/>
+                            <constraint firstItem="vKR-DZ-cNq" firstAttribute="top" secondItem="foB-Zz-559" secondAttribute="bottom" constant="10" id="tsP-es-SqI"/>
                             <constraint firstItem="MRk-bl-x1J" firstAttribute="trailing" secondItem="vKR-DZ-cNq" secondAttribute="trailing" constant="20" id="uFy-0F-Oi5"/>
                             <constraint firstAttribute="trailing" secondItem="ul5-dT-GmU" secondAttribute="trailing" constant="20" id="xV4-Hw-uEq"/>
                             <constraint firstItem="MRk-bl-x1J" firstAttribute="trailing" secondItem="l1H-qU-RFi" secondAttribute="trailing" constant="20" id="y9Z-9t-eD7"/>
@@ -1066,7 +1058,7 @@
                     <navigationItem key="navigationItem" id="yEy-vg-QyB"/>
                     <connections>
                         <outlet property="animationOnOff" destination="vmA-4C-hzq" id="VBD-y2-gzr"/>
-                        <outlet property="backMusicChoice" destination="c0Z-hr-fK0" id="3nI-cO-IVk"/>
+                        <outlet property="backMusicChoice" destination="j5k-mM-Vzn" id="H9H-QS-Byk"/>
                         <outlet property="bombSound" destination="E3Z-Ck-uIx" id="Ytz-Ff-fJN"/>
                         <outlet property="clockSound" destination="cFM-r3-JTm" id="YP9-5o-s6V"/>
                         <outlet property="gameWithMusic" destination="Uhp-Np-ttb" id="n4t-aS-V6O"/>

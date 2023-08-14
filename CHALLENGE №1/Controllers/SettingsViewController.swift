@@ -234,6 +234,7 @@ class SettingsViewController: UIViewController {
         backMusicChoice.showsMenuAsPrimaryAction = true
         backMusicChoice.changesSelectionAsPrimaryAction = true
     }
+ 
     
     func setClockMusic() {
         
